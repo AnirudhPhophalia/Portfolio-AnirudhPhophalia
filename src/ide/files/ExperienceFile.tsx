@@ -68,6 +68,19 @@ export function ExperienceFile() {
                 </span>
               ))}
             </div>
+
+            {e.link && (
+              <div className="mt-3">
+                <a
+                  href={e.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center rounded-md border border-line bg-surface px-3 py-1.5 text-xs text-fg-strong transition-colors hover:border-accent hover:text-accent"
+                >
+                  View Certificate
+                </a>
+              </div>
+            )}
           </li>
         ))}
       </ol>

@@ -9,6 +9,7 @@ import { SkillsFile } from '../files/SkillsFile'
 import { ExperienceFile } from '../files/ExperienceFile'
 import { ContactFile } from '../files/ContactFile'
 import { AchievementsFile } from '../files/AchievementsFile'
+import { CertificatesFile } from '../files/CertificatesFile'
 import { ReadmeFile } from '../files/ReadmeFile'
 
 /** Edit ▸ Select All / Copy operate on this subtree. */
@@ -22,6 +23,7 @@ const VIEWS = {
   experience: ExperienceFile,
   contact: ContactFile,
   achievements: AchievementsFile,
+  certificates: CertificatesFile,
   readme: ReadmeFile,
 } as const
 

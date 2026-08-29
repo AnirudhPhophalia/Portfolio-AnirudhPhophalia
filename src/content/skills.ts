@@ -89,4 +89,11 @@ export const achievements: Achievement[] = [
     description: 'Reached the semifinal stage in August 2025 after building MedInternia.',
     year: 'Aug 2025',
   },
+  {
+    emoji: '🏅',
+    title: 'Class 10 ICSE Board Exam — City Topper, Jaipur',
+    description:
+      'Achieved city-topper recognition in the ICSE Class 10 board examinations in Jaipur, reflecting strong academic consistency and dedication.',
+    year: '2022',
+  }
 ]

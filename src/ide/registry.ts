@@ -15,6 +15,7 @@ export type FileId =
   | 'experience'
   | 'contact'
   | 'achievements'
+  | 'certificates'
   | 'readme'
 
 export type IconKind =
@@ -27,6 +28,7 @@ export type IconKind =
   | 'log'
   | 'md'
   | 'pdf'
+  | 'png'
 
 export interface IdeFile {
   id: FileId
@@ -52,6 +54,7 @@ export const files: IdeFile[] = [
   { id: 'experience', name: 'experience.ts', folder: 'src', icon: 'ts', language: 'TypeScript', comment: 'slash' },
   { id: 'contact', name: 'contact.css', folder: 'src', icon: 'css', language: 'CSS', comment: 'css' },
   { id: 'achievements', name: 'achievements.log', folder: 'logs', icon: 'log', language: 'Log', comment: 'hash' },
+  { id: 'certificates', name: 'certificates.png', folder: 'logs', icon: 'png', language: 'PNG', comment: 'hash' },
   { id: 'readme', name: 'README.md', folder: '.', icon: 'md', language: 'Markdown', comment: 'html' },
 ]
 

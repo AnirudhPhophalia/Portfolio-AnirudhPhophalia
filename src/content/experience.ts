@@ -6,6 +6,7 @@ export interface Role {
   current: boolean
   description: string[]
   techStack: string[]
+  link?: string
 }
 
 export const experiences: Role[] = [
@@ -39,6 +40,7 @@ export const experiences: Role[] = [
       'Integrated REST APIs and optimized frontend performance by resolving UI bugs, improving component reusability, and streamlining data flow.',
     ],
     techStack: ['Angular', 'REST APIs', 'JavaScript'],
+    link: 'https://drive.google.com/file/d/1_r_dvCIRiptC0FCjroRkrkqxFh1qB594/view?usp=drive_link',
   },
   {
     company: 'Backslash Computing Society, TIET',

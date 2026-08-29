@@ -87,7 +87,7 @@ export function ContactFile() {
     const data = new FormData(form)
 
     if (!FORMSPREE_ID) {
-      // No endpoint configured: hand the message to the user's mail client.
+      setStatus('sending')
       const subject = encodeURIComponent(
         String(data.get('subject') || 'Hello from your portfolio')
       )
@@ -95,6 +95,8 @@ export function ContactFile() {
         `${data.get('message')}\n\n— ${data.get('name')} (${data.get('email')})`
       )
       window.location.href = `mailto:${links.email}?subject=${subject}&body=${body}`
+      setStatus('sent')
+      form.reset()
       return
     }
 

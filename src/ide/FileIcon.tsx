@@ -124,5 +124,14 @@ export function FileIcon({
           </text>
         </svg>
       )
+    case 'png':
+      return (
+        <svg viewBox="0 0 24 24" className={cls} aria-hidden="true">
+          <rect x="2.5" y="2.5" width="19" height="19" rx="3" fill="#8b5cf6" />
+          <path d="M7 15.5V8.5h2.2a2.4 2.4 0 0 1 2.4 2.4v2.7H7z" fill="#fff" opacity="0.9" />
+          <path d="M12.8 8.5h3.7v7h-3.7z" fill="#fff" opacity="0.8" />
+          <rect x="6.5" y="16.5" width="11" height="1.5" rx="0.75" fill="#d8b4fe" />
+        </svg>
+      )
   }
 }
