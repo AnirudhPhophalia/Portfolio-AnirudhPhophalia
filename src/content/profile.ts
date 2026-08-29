@@ -58,9 +58,9 @@ export const resumes = [
 export const defaultResume = resumes[0]
 
 export const stats = [
-  { value: '9.61', label: 'Thapar CGPA', suffix: '/ 10' },
+  { value: '9.61', label: 'CGPA', suffix: '/ 10' },
   { value: '15', label: 'Projects', suffix: '+' },
-  { value: '4', label: 'Experiences', suffix: '' },
+  { value: '4+', label: 'Experiences', suffix: '' },
   { value: '94', label: 'Class 12', suffix: '%' },
 ]
 
