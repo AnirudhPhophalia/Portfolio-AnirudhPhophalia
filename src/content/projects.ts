@@ -5,12 +5,9 @@ export interface Project {
   id: string
   emoji: string
   title: string
-  /** Rendered as the uppercase "FULL STACK · AGENTIC AI" category line. */
   tags: string[]
   tone: ProjectTone
-  /** One line on what it is. The numbers belong in `highlights`. */
   description: string
-  /** Two concise, README-backed facts shown on the project card. */
   highlights: [string, string]
   techStack: string[]
   githubUrl: string
@@ -61,7 +58,7 @@ export const projects: Project[] = [
       'Supports case-based learning, peer review, medical jobs, webinars, and user profiles',
       'Selected among the Top 50 projects in GSSoC 2026 with 110 contributors',
     ],
-    techStack: ['Next.js', 'React.js', 'Material UI', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose'],
+    techStack: ['Next.js', 'React.js', 'Node.js', 'Express.js', 'MongoDB'],
     githubUrl: 'https://github.com/AnirudhPhophalia/MedInternia',
     demoUrl: 'https://medinternia.vercel.app/',
   },

@@ -1,12 +1,6 @@
-/**
- * Skills are rendered as grouped tag pills, not percentage bars — there is no
- * honest proficiency number to put on a bar, so the JSON-ish grouping carries
- * the structure instead.
- */
 export interface SkillGroup {
   key: string
   label: string
-  /** Maps to a theme accent slot so each group reads as its own colour. */
   tone: 'accent' | 'green' | 'blue' | 'pink' | 'yellow' | 'purple'
   items: string[]
 }

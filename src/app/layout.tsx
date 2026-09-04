@@ -49,15 +49,10 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  // The shell paints its own chrome edge-to-edge; match the browser UI to it.
   themeColor: '#1a1a2e',
   colorScheme: 'dark',
 }
 
-/**
- * Applied before first paint so a restored theme never flashes the default
- * palette. Kept in sync with THEME_KEY / the theme ids in IdeProvider.
- */
 const THEME_INIT = `try{var t=localStorage.getItem('ide.theme');var v=['arnav-dark','rose-pine','tokyo-night','catppuccin','nord','gruvbox'];document.documentElement.dataset.theme=v.indexOf(t)>-1?t:'arnav-dark'}catch(e){document.documentElement.dataset.theme='arnav-dark'}`
 
 export default function RootLayout({

@@ -1,9 +1,3 @@
-/**
- * Single source of truth for identity, links, and the numbers shown in the
- * home stat row. Everything user-facing that isn't a project/skill/role lives
- * here so there's exactly one place to edit a handle or a resume path.
- */
-
 export const profile = {
   firstName: 'Anirudh',
   lastName: 'Phophalia',
@@ -24,16 +18,15 @@ export const profile = {
     'Building intelligent systems through research-driven ML and production software.',
   /** Cycled by the home hero's typewriter, in order. */
   taglines: [
-    'Building intelligent systems 🛠️',
-    'Computer vision for real-world problems 👁️',
-    'Research-driven ML with measurable results 📈',
-    'Full-stack products that solve real problems 💻',
-    'Always learning, always building ✨',
-    '💻 Crafting code by day, 🎏 flying kites by breeze, and 🔢 solving math puzzles by night.',
+    'Building intelligent systems',
+    'Computer vision for real-world problems',
+    'Research-driven ML with measurable results',
+    'Full-stack products that solve real problems',
+    'Always learning, always building',
+    'Crafting code by day, flying kites by breeze, and solving math puzzles by night.',
   ],
   intro:
     'I work where **machine learning** meets **shipped software** — computer vision, **deep learning research**, and the **full-stack applications** that turn ideas into useful products.',
-  /** `**term**` spans render in the theme blue — see <Emphasis>. */
   bio: "Hi! I'm **Anirudh Phophalia**, a Computer Science student at **Thapar Institute** and a Data Science student at **IIT Madras**. I build **computer vision and deep learning systems**, full-stack applications, and research projects that connect strong engineering with practical impact.",
 } as const
 
@@ -50,7 +43,6 @@ export const resumes = [
     id: 'resume',
     label: 'Anirudh_Phophalia_Resume.pdf',
     href: '/Resume.pdf',
-    /** The one-click "Download Resume" target across the activity bar, File menu and settings. */
     default: true,
   },
 ] as const
@@ -67,7 +59,7 @@ export const stats = [
 /** Two-column "CURRENT FOCUS" list in about.html. */
 export const currentFocus = [
   { emoji: '🔎', text: 'Multimodal computer vision, OCR, and semantic analysis for privacy scanning' },
-  { emoji: '📡', text: 'SDR-based drone detection and RF signal analysis at DRDO' },
+  { emoji: '📡', text: 'SDR-based drone detection and RF signal analysis' },
   { emoji: '🧠', text: 'Deep learning, transformer models, and explainable AI' },
   { emoji: '⚙️', text: 'Full-stack applications with reliable APIs and data workflows' },
   { emoji: '📊', text: 'Applied data science and machine learning experimentation' },

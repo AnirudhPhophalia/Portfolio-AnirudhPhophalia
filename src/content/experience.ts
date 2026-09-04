@@ -2,7 +2,6 @@ export interface Role {
   company: string
   role: string
   period: string
-  /** Drives the filled/outline timeline marker. */
   current: boolean
   description: string[]
   techStack: string[]
@@ -74,7 +73,7 @@ export const education: Education[] = [
     highlights: [],
   },
   {
-    emoji: '🏫',
+    emoji: '🎓',
     institution: 'Indian Institute of Technology Madras',
     degree: 'B.S. in Data Science and Applications',
     period: 'May 2024 – Present',
@@ -90,7 +89,7 @@ export const education: Education[] = [
     highlights: [],
   },
   {
-    emoji: '📘',
+    emoji: '🏫',
     institution: 'Mayura School',
     degree: 'Class 10 — ICSE',
     period: '2022',
