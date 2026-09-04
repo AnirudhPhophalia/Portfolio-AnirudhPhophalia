@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { JetBrains_Mono, Syne } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const jetbrains = JetBrains_Mono({
@@ -103,6 +104,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased" suppressHydrationWarning>
         {children}
+        <Analytics />
       </body>
     </html>
   )
